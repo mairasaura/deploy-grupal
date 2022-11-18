@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.encabezado {
+    width: 100%;
+}
+
+.banner {
+    background-color: rgb(189, 181, 181);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 25px;
+}
+
+.oferta {
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+/*le puse mas ancho al border y le agrandé el tamaño de letra*/
+h2 {
+    border: 3px solid black;
+    padding: 10px 30px;
+    font-size: 30px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+/*acá le di una propiedad a los items del menú de navegación para que se inviertan los colores al pasarle
+el cursor por encima*/
+li:hover {
+    background-color: black;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("darkbeach.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+/*me volví loca buscando como hacer para que el h1 quedara en dos líneas, lo único que se me ocurrió
+fue darle un ancho limitado y ponerle una fuente grande para que no quepa bien y se acomodara como pudiera.
+Probablemente no sea esta la forma correcta pero el profe dijo que en CSS si funciona: queda jajaja */
+h1 {
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+}
+
+span {
+    color: black;
+}
+
+/*acá les saco el subrayado y el color azul a los hipervínculos <a> que agregué*/
+a {
+    text-decoration: none;
+    color: black;
+}
